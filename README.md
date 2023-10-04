@@ -31,6 +31,7 @@ git clone https://github.com/nmtmason/nix-config
 
 ```bash
 nix build .#darwinConfigurations.<host>.system
+./result/sw/bin/darwin-rebuild switch --flake .#<host>
 ```
 
 6. Reboot:
