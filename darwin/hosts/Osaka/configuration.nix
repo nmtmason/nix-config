@@ -28,8 +28,8 @@
     enable = true;
     casks = [
       "1password"
-      "arc"
       "azure-data-studio"
+      "bruno"
       "firefox"
       "fork"
       "google-chrome"
@@ -37,7 +37,6 @@
       "linearmouse"
       "microsoft-office"
       "obsidian"
-      "postman"
       "raycast"
       "slack"
       "visual-studio-code"
