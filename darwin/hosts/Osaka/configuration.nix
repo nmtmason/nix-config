@@ -43,6 +43,10 @@
       "vlc"
       "zoom"
     ];
+    onActivation = {
+      autoUpdate = true;
+      cleanup = "zap";
+    };
   };
 
   networking = {
