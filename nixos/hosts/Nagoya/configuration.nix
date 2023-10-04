@@ -8,13 +8,13 @@
 with lib; {
   imports = [
     ./hardware-configuration.nix
-    ../../../modules/features/fonts.nix
     ../../../modules/features/i18n.nix
     ../../../modules/features/nix.nix
     ../../../modules/features/nixpkgs.nix
     ../../../modules/features/openssh.nix
     ../../../modules/features/time.nix
     ../../../modules/features/zsh.nix
+    ../../modules/features/fonts.nix
     ../../modules/features/samba.nix
     ../../modules/features/syncthing.nix
     ../../modules/features/user.nix

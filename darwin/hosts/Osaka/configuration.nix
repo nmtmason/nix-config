@@ -5,10 +5,10 @@
   ...
 }: {
   imports = [
-    ../../../modules/features/fonts.nix
     ../../../modules/features/nix.nix
     ../../../modules/features/nixpkgs.nix
     ../../../modules/features/zsh.nix
+    ../../modules/features/fonts.nix
     ../../modules/features/user.nix
   ];
 
