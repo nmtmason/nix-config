@@ -12,6 +12,7 @@ with lib; {
     ../../../modules/features/nix.nix
     ../../../modules/features/nixpkgs.nix
     ../../../modules/features/openssh.nix
+    ../../../modules/features/tailscale.nix
     ../../../modules/features/time.nix
     ../../../modules/features/zsh.nix
     ../../modules/features/fonts.nix
@@ -32,6 +33,7 @@ with lib; {
       username = user.username;
       group = user.group;
     };
+    tailcale.enable = true;
     time.enable = true;
     user = {
       enable = true;

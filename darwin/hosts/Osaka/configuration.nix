@@ -7,6 +7,7 @@
   imports = [
     ../../../modules/features/nix.nix
     ../../../modules/features/nixpkgs.nix
+    ../../../modules/features/tailscale.nix
     ../../../modules/features/zsh.nix
     ../../modules/features/fonts.nix
     ../../modules/features/user.nix
@@ -16,6 +17,7 @@
     fonts.enable = true;
     nix.enable = true;
     nixpkgs.enable = true;
+    tailscale.enable = true;
     user = {
       enable = true;
       username = user.username;
