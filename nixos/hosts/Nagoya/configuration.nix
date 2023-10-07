@@ -33,7 +33,7 @@ with lib; {
       username = user.username;
       group = user.group;
     };
-    tailcale.enable = true;
+    tailscale.enable = true;
     time.enable = true;
     user = {
       enable = true;
