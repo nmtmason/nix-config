@@ -53,11 +53,17 @@ with lib; {
   environment = {
     systemPackages = [
       pkgs._1password-gui
+      pkgs.azuredatastudio
+      pkgs.bruno
       pkgs.firefox
+      pkgs.google-chrome
       pkgs.kitty
       pkgs.obsidian
+      pkgs.slack
+      pkgs.spotify
       pkgs.vlc
       pkgs.vscode
+      pkgs.zoom-us
     ];
   };
 
@@ -69,6 +75,12 @@ with lib; {
     firewall.enable = true;
     hostName = host.hostName;
     networkmanager.enable = true;
+  };
+
+  programs.steam = {
+    enable = true;
+    remotePlay.openFirewall = true;
+    dedicatedServer.openFirewall = true;
   };
 
   security = {
