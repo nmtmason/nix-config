@@ -64,6 +64,7 @@ with lib; {
       pkgs.vlc
       pkgs.vscode
       pkgs.zoom-us
+      pkgs.qbittorrent
     ];
   };
 
