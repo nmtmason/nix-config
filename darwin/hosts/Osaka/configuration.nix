@@ -38,6 +38,7 @@
       "kitty"
       "linearmouse"
       "microsoft-office"
+      "microsoft-remote-desktop"
       "obsidian"
       "raycast"
       "slack"

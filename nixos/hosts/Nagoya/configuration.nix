@@ -88,13 +88,20 @@ with lib; {
     sudo.wheelNeedsPassword = false;
   };
 
-  services.xserver = {
-    enable = true;
-    desktopManager.plasma5.enable = true;
-    displayManager.sddm.enable = true;
-    videoDrivers = [
-      "amdgpu"
-    ];
+  services = {
+    xrdp = {
+      enable = true;
+      defaultWindowManager = "startplasma-x11";
+      openFirewall = true;
+    };
+    xserver = {
+      enable = true;
+      desktopManager.plasma5.enable = true;
+      displayManager.sddm.enable = true;
+      videoDrivers = [
+        "amdgpu"
+      ];
+    };
   };
 
   system = {
