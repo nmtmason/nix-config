@@ -76,8 +76,12 @@
       };
 
       dock = {
+        mineffect = "scale";
+        minimize-to-application = true;
         orientation = "right";
+        show-process-indicators = false;
         static-only = true;
+        tilesize = 48;
       };
 
       finder = {
