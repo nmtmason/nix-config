@@ -9,6 +9,10 @@ with lib; let
 in {
   options.features.home.ssh = {
     enable = mkEnableOption "ssh";
+    identityAgentPath = mkOption {
+      type = types.str;
+      default = "~/.1password/agent.sock";
+    };
   };
 
   config = mkIf cfg.enable {
@@ -17,7 +21,7 @@ in {
         enable = true;
         extraConfig = ''
           Host *
-            IdentityAgent ~/.1password/agent.sock
+            IdentityAgent ${cfg.identityAgentPath}
         '';
       };
     };
