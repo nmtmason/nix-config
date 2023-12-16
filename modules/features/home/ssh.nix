@@ -21,7 +21,7 @@ in {
         enable = true;
         extraConfig = ''
           Host *
-            IdentityAgent ${cfg.identityAgentPath}
+            IdentityAgent "${cfg.identityAgentPath}"
         '';
       };
     };
