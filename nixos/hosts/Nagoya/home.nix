@@ -33,10 +33,6 @@
 
   home = {
     packages = with pkgs; [
-      alejandra
-      azure-cli
-      azure-functions-core-tools
-      docker
       wget
     ];
     sessionVariables = {
