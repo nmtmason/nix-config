@@ -10,7 +10,6 @@
     ../../../modules/features/home/kitty.nix
     ../../../modules/features/home/ssh.nix
     ../../../modules/features/home/starship.nix
-    ../../../modules/features/home/syncthing.nix
     ../../../modules/features/home/zsh.nix
   ];
 
@@ -26,7 +25,6 @@
     kitty.enable = true;
     ssh.enable = true;
     starship.enable = true;
-    syncthing.enable = true;
     zsh.enable = true;
   };
 

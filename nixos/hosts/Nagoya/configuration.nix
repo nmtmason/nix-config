@@ -17,7 +17,6 @@ with lib; {
     ../../../modules/features/zsh.nix
     ../../modules/features/fonts.nix
     ../../modules/features/samba.nix
-    ../../modules/features/syncthing.nix
     ../../modules/features/user.nix
   ];
 
@@ -28,11 +27,6 @@ with lib; {
     nix.enable = true;
     nixpkgs.enable = true;
     samba.enable = true;
-    syncthing = {
-      enable = true;
-      username = user.username;
-      group = user.group;
-    };
     tailscale.enable = true;
     time.enable = true;
     user = {
