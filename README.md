@@ -37,7 +37,7 @@ nix build .#darwinConfigurations.<host>.system
 6. Reboot:
 
 ```bash
-reboot
+sudo reboot
 ```
 
 7. Rebuild as necessary:
