@@ -31,7 +31,8 @@
     casks = [
       "1password"
       "azure-data-studio"
-      "bruno"
+      "cyberghost-vpn"
+      "docker"
       "firefox"
       "fork"
       "google-chrome"
@@ -42,6 +43,8 @@
       "obsidian"
       "raycast"
       "slack"
+      "spotify"
+      "utm"
       "visual-studio-code"
       "vlc"
       "zoom"
