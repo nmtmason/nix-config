@@ -31,6 +31,7 @@
     casks = [
       "1password"
       "azure-data-studio"
+      "clickup"
       "cyberghost-vpn"
       "docker"
       "firefox"
