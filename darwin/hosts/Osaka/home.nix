@@ -33,6 +33,8 @@
 
   home = {
     packages = with pkgs; [
+      azure-cli
+      flyctl
       wget
     ];
     sessionPath = [
