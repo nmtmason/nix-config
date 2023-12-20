@@ -35,6 +35,7 @@
     packages = with pkgs; [
       azure-cli
       flyctl
+      neovim
       wget
     ];
     sessionPath = [
