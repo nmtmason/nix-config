@@ -77,10 +77,13 @@
       };
 
       dock = {
+        launchanim = false;
         mineffect = "scale";
         minimize-to-application = true;
+        mru-spaces = false;
         orientation = "right";
         show-process-indicators = false;
+        show-recents = false;
         static-only = true;
         tilesize = 48;
       };
