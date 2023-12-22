@@ -28,7 +28,7 @@ in {
         "kitty/kitty.conf".text = ''
           font_family JetBrainsMono Nerd Font
           font_size ${cfg.fontSize}
-          include ${pkgs.kitty-themes}/share/kitty-themes/themes/GitHub_Dark_Dimmed.conf
+          include ${pkgs.kitty-themes}/share/kitty-themes/themes/Catppuccin-Macchiato.conf
           shell_integration no-rc enabled
         '';
       };

@@ -16,7 +16,7 @@ in {
       helix = {
         enable = true;
         settings = {
-          theme = "github_dark_dimmed";
+          theme = "catppuccin_macchiato";
           editor = {
             bufferline = "always";
             cursor-shape = {
