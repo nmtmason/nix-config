@@ -48,17 +48,17 @@ with lib; {
     systemPackages = [
       pkgs._1password-gui
       pkgs.azuredatastudio
-      pkgs.bruno
+      pkgs.docker
       pkgs.firefox
       pkgs.google-chrome
       pkgs.kitty
       pkgs.obsidian
+      pkgs.qbittorrent
       pkgs.slack
       pkgs.spotify
       pkgs.vlc
       pkgs.vscode
       pkgs.zoom-us
-      pkgs.qbittorrent
     ];
   };
 
