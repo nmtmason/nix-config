@@ -41,6 +41,7 @@
       "linearmouse"
       "microsoft-office"
       "microsoft-remote-desktop"
+      "netnewswire"
       "obsidian"
       "raycast"
       "slack"
