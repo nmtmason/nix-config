@@ -30,6 +30,8 @@ in {
           font_size ${cfg.fontSize}
           include ${pkgs.kitty-themes}/share/kitty-themes/themes/Catppuccin-Macchiato.conf
           shell_integration no-rc enabled
+          tab_bar_min_tabs 1
+          tab_bar_style powerline
         '';
       };
     };

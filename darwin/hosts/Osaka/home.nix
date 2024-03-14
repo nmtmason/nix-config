@@ -15,12 +15,12 @@
 
   features.home = {
     direnv.enable = true;
-    git = {
-      enable = true;
-      userName = user.name;
-      userEmail = user.email;
-      editor = "hx";
-    };
+    # git = {
+    #   enable = true;
+    #   userName = user.name;
+    #   userEmail = user.email;
+    #   editor = "hx";
+    # };
     helix.enable = true;
     kitty.enable = true;
     ssh = {
@@ -34,7 +34,6 @@
   home = {
     packages = with pkgs; [
       azure-cli
-      flyctl
       neovim
       wget
     ];

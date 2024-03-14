@@ -29,27 +29,29 @@
   homebrew = {
     enable = true;
     casks = [
-      "1password"
-      "azure-data-studio"
+      "1password" # _1password
+      "anki" # anki
+      "azure-data-studio" # azuredatastudio
       "clickup"
       "cyberghost-vpn"
-      "docker"
-      "firefox"
+      "docker" # docker
+      "firefox" # firefox
       "fork"
-      "google-chrome"
-      "kitty"
+      "google-chrome" # google-chrome
+      "kitty" # kitty
       "linearmouse"
       "microsoft-office"
       "microsoft-remote-desktop"
-      "netnewswire"
-      "obsidian"
-      "raycast"
-      "slack"
-      "spotify"
-      "utm"
-      "visual-studio-code"
-      "vlc"
-      "zoom"
+      "mysqlworkbench" # mysql-workbench
+      "netnewswire" # net-news-wire
+      "obsidian" # obsidian
+      "raycast" # raycast
+      "slack" # slack
+      "spotify" # spotify
+      "utm" # utm
+      "visual-studio-code" # vscode
+      "vlc" # vlc
+      "zoom" # zoom-us
     ];
     onActivation = {
       autoUpdate = true;
