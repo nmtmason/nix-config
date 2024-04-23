@@ -121,3 +121,33 @@ nmtui
 ```bash
 nixos-rebuild switch --flake .#<host>
 ```
+
+## nixos-wsl
+
+1. Install [NixOS-WSL](https://github.com/nix-community/NixOS-WSL).
+
+2. Clone this repository:
+
+```bash
+nix-shell -p git
+git clone https://github.com/nmtmason/nix-config nix-config
+```
+
+3. Install:
+
+```bash
+cd nix-config
+nixos-install --flake .#<host>
+```
+
+4. Reboot:
+
+```bash
+wsl --shutdown
+```
+
+5. Rebuild as necessary:
+
+```bash
+sudo nixos-rebuild switch --flake .#<host>
+```

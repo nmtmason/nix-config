@@ -7,8 +7,16 @@
       url = "github:lnl7/nix-darwin/master";
       inputs.nixpkgs.follows = "nixpkgs";
     };
+    nixos-wsl = {
+      url = "github:nix-community/NixOS-WSL";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
     home-manager = {
       url = "github:nix-community/home-manager/master";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
+    vscode-server = {
+      url = "github:nix-community/nixos-vscode-server";
       inputs.nixpkgs.follows = "nixpkgs";
     };
   };
@@ -17,7 +25,9 @@
     self,
     nixpkgs,
     darwin,
+    nixos-wsl,
     home-manager,
+    vscode-server,
     ...
   }: let
     user = {
@@ -36,7 +46,7 @@
     };
 
     nixosConfigurations = import ./nixos {
-      inherit nixpkgs home-manager user;
+      inherit nixpkgs nixos-wsl home-manager vscode-server user;
     };
   };
 }

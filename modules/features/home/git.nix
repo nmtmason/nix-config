@@ -18,6 +18,10 @@ in {
     editor = mkOption {
       type = types.str;
     };
+    sshCommand = mkOption {
+      type = types.str;
+      default = "ssh";
+    };
   };
 
   config = mkIf cfg.enable {
@@ -36,6 +40,7 @@ in {
           };
           core = {
             editor = cfg.editor;
+            sshCommand = cfg.sshCommand;
           };
           init = {
             defaultBranch = "main";
